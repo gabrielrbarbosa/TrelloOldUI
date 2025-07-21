@@ -7,6 +7,10 @@
 // @match        https://trello.com/*
 // @grant        none
 // @run-at       document-start
+// @homepageURL  https://github.com/gabrielrbarbosa/TrelloOldUI
+// @supportURL   https://github.com/gabrielrbarbosa/TrelloOldUI/issues
+// @updateURL    https://github.com/gabrielrbarbosa/TrelloOldUI/raw/main/script.js
+// @downloadURL  https://github.com/gabrielrbarbosa/TrelloOldUI/raw/main/script.js
 // ==/UserScript==
 
 (function() {
