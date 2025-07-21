@@ -6,6 +6,8 @@
 
 > Restore the classic Trello card design layout and rollback the beta redesign to the familiar old UI
 
+<a href="https://www.buymeacoffee.com/gabrielrbarbosa" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+
 ## 🎯 Overview
 
 TrelloOldUI is a Tampermonkey userscript that restores Trello's previous card design layout, effectively rolling back the new beta redesign to the classic UI that many users prefer. This script maintains the familiar workflow and visual structure that made Trello so intuitive to use.
