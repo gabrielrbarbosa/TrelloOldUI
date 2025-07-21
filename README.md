@@ -34,8 +34,8 @@ TrelloOldUI is a Tampermonkey userscript that restores Trello's previous card de
 
 ### Quick Install
 ```bash
-# Direct install link (if hosted)
-https://github.com/gabrielrbarbosa/TrelloOldUI/raw/main/trello-old-ui.user.js
+# Direct install link
+https://github.com/gabrielrbarbosa/TrelloOldUI/raw/main/script.js
 ```
 
 ## 🎨 What Changes
