@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Trello Card Layout Restorer
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @version      2.1
 // @description  Restore previous Trello card design layout, rollback trello beta redesign to old UI
 // @author       gabrielrbarbosa
 // @match        https://trello.com/*
@@ -60,8 +60,8 @@
         }
 
         /* Set min-height for header inside card-back-redesign */
-        .card-back-redesign header {
-            min-height: 40px !important;
+        [data-testid="card-back-name"] header {
+            min-height: 38px !important;
         }
 
         /* Reset margin-bottom for sections inside card-back-redesign */
@@ -87,10 +87,11 @@
             padding: 10px 0 0 0 !important;
             max-width: 95% !important;
             margin-left: 20px;
+            margin-bottom: 0 !important;
         }
 
         [data-testid="card-back-title-input"] {
-            font-size: 1.5rem !important;
+            font-size: 1.4rem !important;
             padding-top: 0 !important;
         }
 
@@ -207,6 +208,19 @@
         if (cardBackHeaderHgroup) {
             cardBackHeaderHgroup.style.maxHeight = '25px';
         }
+
+        // Apply height styles to only the first 4 nested divs inside [data-focus-lock="cardback"]
+        const cardBackFocus = document.querySelector('[data-focus-lock="cardback"]');
+        if (cardBackFocus) {
+            const nestedDivs = cardBackFocus.querySelectorAll('div');
+            nestedDivs.forEach((div, index) => {
+                if (index < 4) {
+                    div.style.height = '100vh';
+                    div.style.maxHeight = '100vh';
+                }
+            });
+        }
+
     }
 
     // Function to observe DOM changes and apply fixes
